@@ -9,7 +9,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 // Start Endpoint
-app.MapPost("api/v1/proucts", async (AppDbContext context, ListingRequest request) =>
+app.MapPost("api/v1/products", async (AppDbContext context, ListingRequest request) =>
 {
     if(request == null)
     {
